@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+
+        <!-- 타이틀바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_mint"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="[3677]"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Offline Product Notification"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- //end 타이틀바 -->
+        <!-- Notice -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recommendList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <!-- Notice -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#66bdbdbd" />
+
+        <!-- 닫기 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20px">
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="@color/color_mint"
+                android:gravity="center"
+                android:text="Close"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_ok"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="53dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#ff7a00"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="mOnButton"-->
+            <!--android:text="show details"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold" />-->
+        </LinearLayout>
+        <!--// 닫기 버튼 -->
+    </LinearLayout>
+</layout>

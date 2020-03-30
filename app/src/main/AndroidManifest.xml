@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jo.beacon.project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+
+    <!-- 10.31 change allowBackup=true to false & add fullBackupContent -->
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="jo.beacon.project.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- stateHidden: Activity 실행 시 키보드가 자동으로 올라오는 것을 방지 -->
+        <activity
+            android:name="jo.beacon.project.activity.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="jo.beacon.project.activity.LoginActivity" />
+        <!-- singleTop: PopupActivity가 백스택 가장 위에 있을 시 새로 생성하지 않고 onNewIntent() 메서드로 Intent를 전달한다.
+        가장 위에 없다면 standard 방식(백스택의 가장 위에 액티비티를 추가한다)이 된다.  -->
+        <activity
+            android:name="jo.beacon.project.activity.PopupActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="jo.beacon.project.activity.RecommendActivity" />
+        <service android:name="jo.beacon.project.network.MyService" />
+        <activity android:name="jo.beacon.project.activity.DetailsActivity" />
+        <activity android:name="jo.beacon.project.activity.RegisterActivity" />
+        <activity android:name="jo.beacon.project.activity.MypageActivity" />
+        <activity android:name="jo.beacon.project.activity.ARCameraActivity" />
+        <activity android:name=".activity.BaseActivity" />
+
+        <meta-data android:name="com.google.ar.core" android:value="required" />
+    </application>
+
+</manifest>

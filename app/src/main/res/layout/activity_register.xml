@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_fragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/textHead"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_app"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <!--Input-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--Input-->
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textHead"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_registerID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ID"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/et_registerPW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/bt_registerBT"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="REGISTER" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/top_fragment"
+        android:name="jo.beacon.project.fragment.TopBackFragment"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:tag="TopFragment"
+        app:layout_collapseMode="parallax"
+        tools:layout="@layout/fragment_top_back" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#818bc0</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainColor">#232c3d</color>
+    <color name="space_color">#e8e8e8</color>
+
+    <!-- 추가 -->
+    <color name="transparent">#ffffffff</color>
+    <color name="app_color">#2966fe</color>
+    <color name="second_color">#5689ff</color>
+    <color name="third_color">#203163</color>
+    <color name="forth_color">#111a34</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#fABB0D</color>
+    <color name="red">#ff0000</color>
+
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_b9d2ff">#b9d2ff</color>
+    <color name="color_ebebeb">#ebebeb</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="color_acacac">#acacac</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_2f4678">#2f4678</color>
+    <color name="color_616161">#616161</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_33000000">#33000000</color> <!-- 20% -->
+    <color name="color_b2000000">#b2000000</color> <!-- 70% -->
+    <color name="color_b2ffffff">#b2ffffff</color> <!-- 70% -->
+
+    <!-- made by kwon -->
+    <color name="color_mint">#CAEEEE</color>
+    <color name="color_mint_complementary">#B35E2C</color>
+    <color name="color_background">#F88379</color>
+
+</resources>
